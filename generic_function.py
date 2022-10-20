@@ -7,6 +7,6 @@ def first(values: Sequence[T], default: T) -> T:
         return default
     return values[0]
 
-names = ["Harry", "Barry", "Warry"]
+names = ["Harry", "Barry", "Warry"] # list[str]
 
-first_name = first(names, "Jarry") # str
+first_name = first(names, 0) # str

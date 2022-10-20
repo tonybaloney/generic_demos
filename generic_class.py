@@ -17,5 +17,6 @@ class Record(Generic[TKey, TValue]):
     def update(self, value: TValue):
         self.value = value
 
-record1 = Record(1, "Hello")
-record1.update("new word")
+record1 = Record(1, "Hello") # Record[int, str]
+record1.update("new word") # update(value: str)
+record1.update(1)  # typing error.
